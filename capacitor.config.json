@@ -1,0 +1,9 @@
+{
+  "appId": "com.lagoonlink.puzzle",
+  "appName": "LagoonLink",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

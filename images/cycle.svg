@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.88" />
+    </radialGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#bgGlow)" stroke="#FFFFFF" stroke-width="4" filter="url(#dropShadow)" />
+  <g filter="url(#dropShadow)">
+    
+        <!-- Rear Wheel -->
+        <circle cx="34" cy="72" r="16" fill="none" stroke="#1E293B" stroke-width="4.5" />
+        <circle cx="34" cy="72" r="12" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 3" />
+        <!-- Front Wheel -->
+        <circle cx="86" cy="72" r="16" fill="none" stroke="#1E293B" stroke-width="4.5" />
+        <circle cx="86" cy="72" r="12" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 3" />
+        <!-- Bicycle Frame -->
+        <path d="M34 72 L56 72 L74 48 L48 48 Z" fill="none" stroke="#EF4444" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" />
+        <!-- Seat Post & Saddle -->
+        <line x1="56" y1="72" x2="45" y2="40" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+        <path d="M38 40 L52 40" stroke="#1E293B" stroke-width="5" stroke-linecap="round" />
+        <!-- Front Fork & Handlebars -->
+        <line x1="86" y1="72" x2="71" y2="36" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+        <path d="M65 36 L78 36 C81 36 82 41 78 42" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" />
+        <!-- Crankset / Pedal Gear -->
+        <circle cx="56" cy="72" r="5.5" fill="#FACC15" stroke="#1E293B" stroke-width="2" />
+        <circle cx="34" cy="72" r="3" fill="#FACC15" />
+        <circle cx="86" cy="72" r="3" fill="#FACC15" />
+      
+  </g>
+</svg>

@@ -1,0 +1,120 @@
+{
+  "entities": {
+    "ScoreRecord": {
+      "title": "ScoreRecord",
+      "description": "An individual game score record belonging to an authenticated player.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The UID of the authenticated player who achieved this score.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "playerName": {
+          "type": "string",
+          "description": "Display name of the player.",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "score": {
+          "type": "integer",
+          "description": "Total points scored in the matching puzzle session."
+        },
+        "levelReached": {
+          "type": "integer",
+          "description": "Highest progressive difficulty level reached in the run."
+        },
+        "matchesCount": {
+          "type": "integer",
+          "description": "Total target items accurately linked in 10-second steps."
+        },
+        "status": {
+          "type": "string",
+          "description": "Terminal status of the score run.",
+          "enum": ["active", "completed"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the score record was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the score record was last updated."
+        }
+      },
+      "required": [
+        "userId",
+        "playerName",
+        "score",
+        "levelReached",
+        "matchesCount",
+        "status",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "GlobalLeaderboard": {
+      "title": "GlobalLeaderboard",
+      "description": "Bounded top-10 global high score board document.",
+      "type": "object",
+      "properties": {
+        "boardType": {
+          "type": "string",
+          "description": "Identifier for the leaderboard type.",
+          "enum": ["global"]
+        },
+        "lastUpdatedBy": {
+          "type": "string",
+          "description": "UID of the verified player who last updated the board.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "topScore": {
+          "type": "integer",
+          "description": "Highest score currently on the board."
+        },
+        "entries": {
+          "type": "array",
+          "description": "Bounded list of up to 10 top score map entries."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the board was initialized."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the board was last updated."
+        }
+      },
+      "required": [
+        "boardType",
+        "lastUpdatedBy",
+        "topScore",
+        "entries",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/scores/{scoreId}": {
+      "schema": {
+        "$ref": "#/entities/ScoreRecord"
+      },
+      "description": "Stores individual player puzzle runs and personal high scores."
+    },
+    "/leaderboards/{boardId}": {
+      "schema": {
+        "$ref": "#/entities/GlobalLeaderboard"
+      },
+      "description": "Stores the global top-10 leaderboard summary document."
+    }
+  }
+}

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "apple",
+    "index": 1,
+    "name": "Apple",
+    "category": "Fruit",
+    "imagePath": "/images/apple.svg",
+    "primaryColor": "#EF4444",
+    "secondaryColor": "#FCA5A5",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "banana",
+    "index": 2,
+    "name": "Banana",
+    "category": "Fruit",
+    "imagePath": "/images/banana.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#A16207"
+  },
+  {
+    "id": "orange",
+    "index": 3,
+    "name": "Orange",
+    "category": "Fruit",
+    "imagePath": "/images/orange.svg",
+    "primaryColor": "#F97316",
+    "secondaryColor": "#FED7AA",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "strawberry",
+    "index": 4,
+    "name": "Strawberry",
+    "category": "Fruit",
+    "imagePath": "/images/strawberry.svg",
+    "primaryColor": "#E11D48",
+    "secondaryColor": "#FDA4AF",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "grape",
+    "index": 5,
+    "name": "Grape",
+    "category": "Fruit",
+    "imagePath": "/images/grape.svg",
+    "primaryColor": "#7C3AED",
+    "secondaryColor": "#C4B5FD",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "mango",
+    "index": 6,
+    "name": "Mango",
+    "category": "Fruit",
+    "imagePath": "/images/mango.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#FDE047",
+    "accentColor": "#EF4444"
+  },
+  {
+    "id": "pineapple",
+    "index": 7,
+    "name": "Pineapple",
+    "category": "Fruit",
+    "imagePath": "/images/pineapple.svg",
+    "primaryColor": "#EAB308",
+    "secondaryColor": "#CA8A04",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "watermelon",
+    "index": 8,
+    "name": "Watermelon",
+    "category": "Fruit",
+    "imagePath": "/images/watermelon.svg",
+    "primaryColor": "#F43F5E",
+    "secondaryColor": "#16A34A",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "blueberry",
+    "index": 9,
+    "name": "Blueberry",
+    "category": "Fruit",
+    "imagePath": "/images/blueberry.svg",
+    "primaryColor": "#2563EB",
+    "secondaryColor": "#93C5FD",
+    "accentColor": "#1E3A8A"
+  },
+  {
+    "id": "raspberry",
+    "index": 10,
+    "name": "Raspberry",
+    "category": "Fruit",
+    "imagePath": "/images/raspberry.svg",
+    "primaryColor": "#DB2777",
+    "secondaryColor": "#F472B6",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "peach",
+    "index": 11,
+    "name": "Peach",
+    "category": "Fruit",
+    "imagePath": "/images/peach.svg",
+    "primaryColor": "#FB7185",
+    "secondaryColor": "#FDBA74",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "pear",
+    "index": 12,
+    "name": "Pear",
+    "category": "Fruit",
+    "imagePath": "/images/pear.svg",
+    "primaryColor": "#84CC16",
+    "secondaryColor": "#D9F99D",
+    "accentColor": "#713F12"
+  },
+  {
+    "id": "cherry",
+    "index": 13,
+    "name": "Cherry",
+    "category": "Fruit",
+    "imagePath": "/images/cherry.svg",
+    "primaryColor": "#DC2626",
+    "secondaryColor": "#F87171",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "kiwi",
+    "index": 14,
+    "name": "Kiwi",
+    "category": "Fruit",
+    "imagePath": "/images/kiwi.svg",
+    "primaryColor": "#65A30D",
+    "secondaryColor": "#ECFCCB",
+    "accentColor": "#78350F"
+  },
+  {
+    "id": "lemon",
+    "index": 15,
+    "name": "Lemon",
+    "category": "Fruit",
+    "imagePath": "/images/lemon.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "lime",
+    "index": 16,
+    "name": "Lime",
+    "category": "Fruit",
+    "imagePath": "/images/lime.svg",
+    "primaryColor": "#16A34A",
+    "secondaryColor": "#86EFAC",
+    "accentColor": "#065F46"
+  },
+  {
+    "id": "avocado",
+    "index": 17,
+    "name": "Avocado",
+    "category": "Fruit",
+    "imagePath": "/images/avocado.svg",
+    "primaryColor": "#15803D",
+    "secondaryColor": "#BEF264",
+    "accentColor": "#78350F"
+  },
+  {
+    "id": "coconut",
+    "index": 18,
+    "name": "Coconut",
+    "category": "Fruit",
+    "imagePath": "/images/coconut.svg",
+    "primaryColor": "#78350F",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#A16207"
+  },
+  {
+    "id": "papaya",
+    "index": 19,
+    "name": "Papaya",
+    "category": "Fruit",
+    "imagePath": "/images/papaya.svg",
+    "primaryColor": "#F97316",
+    "secondaryColor": "#FDE047",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "pomegranate",
+    "index": 20,
+    "name": "Pomegranate",
+    "category": "Fruit",
+    "imagePath": "/images/pomegranate.svg",
+    "primaryColor": "#BE123C",
+    "secondaryColor": "#FB7185",
+    "accentColor": "#881337"
+  },
+  {
+    "id": "fig",
+    "index": 21,
+    "name": "Fig",
+    "category": "Fruit",
+    "imagePath": "/images/fig.svg",
+    "primaryColor": "#6D28D9",
+    "secondaryColor": "#F43F5E",
+    "accentColor": "#4C1D95"
+  },
+  {
+    "id": "plum",
+    "index": 22,
+    "name": "Plum",
+    "category": "Fruit",
+    "imagePath": "/images/plum.svg",
+    "primaryColor": "#7E22CE",
+    "secondaryColor": "#C084FC",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "apricot",
+    "index": 23,
+    "name": "Apricot",
+    "category": "Fruit",
+    "imagePath": "/images/apricot.svg",
+    "primaryColor": "#FB923C",
+    "secondaryColor": "#FED7AA",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "blackberry",
+    "index": 24,
+    "name": "Blackberry",
+    "category": "Fruit",
+    "imagePath": "/images/blackberry.svg",
+    "primaryColor": "#312E81",
+    "secondaryColor": "#6366F1",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "cranberry",
+    "index": 25,
+    "name": "Cranberry",
+    "category": "Fruit",
+    "imagePath": "/images/cranberry.svg",
+    "primaryColor": "#B91C1C",
+    "secondaryColor": "#FCA5A5",
+    "accentColor": "#166534"
+  },
+  {
+    "id": "dragon-fruit",
+    "index": 26,
+    "name": "Dragon Fruit",
+    "category": "Fruit",
+    "imagePath": "/images/dragon-fruit.svg",
+    "primaryColor": "#EC4899",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#22C55E"
+  },
+  {
+    "id": "passion-fruit",
+    "index": 27,
+    "name": "Passion Fruit",
+    "category": "Fruit",
+    "imagePath": "/images/passion-fruit.svg",
+    "primaryColor": "#581C87",
+    "secondaryColor": "#FACC15",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "guava",
+    "index": 28,
+    "name": "Guava",
+    "category": "Fruit",
+    "imagePath": "/images/guava.svg",
+    "primaryColor": "#22C55E",
+    "secondaryColor": "#FB7185",
+    "accentColor": "#FEF08A"
+  },
+  {
+    "id": "lychee",
+    "index": 29,
+    "name": "Lychee",
+    "category": "Fruit",
+    "imagePath": "/images/lychee.svg",
+    "primaryColor": "#F43F5E",
+    "secondaryColor": "#FFF1F2",
+    "accentColor": "#78350F"
+  },
+  {
+    "id": "cantaloupe",
+    "index": 30,
+    "name": "Cantaloupe",
+    "category": "Fruit",
+    "imagePath": "/images/cantaloupe.svg",
+    "primaryColor": "#FB923C",
+    "secondaryColor": "#BBF7D0",
+    "accentColor": "#FDBA74"
+  },
+  {
+    "id": "honeydew-melon",
+    "index": 31,
+    "name": "Honeydew Melon",
+    "category": "Fruit",
+    "imagePath": "/images/honeydew-melon.svg",
+    "primaryColor": "#86EFAC",
+    "secondaryColor": "#DCFCE7",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "grapefruit",
+    "index": 32,
+    "name": "Grapefruit",
+    "category": "Fruit",
+    "imagePath": "/images/grapefruit.svg",
+    "primaryColor": "#F43F5E",
+    "secondaryColor": "#FDBA74",
+    "accentColor": "#FB923C"
+  },
+  {
+    "id": "tangerine",
+    "index": 33,
+    "name": "Tangerine",
+    "category": "Fruit",
+    "imagePath": "/images/tangerine.svg",
+    "primaryColor": "#EA580C",
+    "secondaryColor": "#FED7AA",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "clementine",
+    "index": 34,
+    "name": "Clementine",
+    "category": "Fruit",
+    "imagePath": "/images/clementine.svg",
+    "primaryColor": "#F97316",
+    "secondaryColor": "#FFEDD5",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "persimmon",
+    "index": 35,
+    "name": "Persimmon",
+    "category": "Fruit",
+    "imagePath": "/images/persimmon.svg",
+    "primaryColor": "#EA580C",
+    "secondaryColor": "#FDBA74",
+    "accentColor": "#3F6212"
+  },
+  {
+    "id": "nectarine",
+    "index": 36,
+    "name": "Nectarine",
+    "category": "Fruit",
+    "imagePath": "/images/nectarine.svg",
+    "primaryColor": "#E11D48",
+    "secondaryColor": "#FBBF24",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "star-fruit",
+    "index": 37,
+    "name": "Star Fruit",
+    "category": "Fruit",
+    "imagePath": "/images/star-fruit.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#A16207"
+  },
+  {
+    "id": "durian",
+    "index": 38,
+    "name": "Durian",
+    "category": "Fruit",
+    "imagePath": "/images/durian.svg",
+    "primaryColor": "#65A30D",
+    "secondaryColor": "#FDE047",
+    "accentColor": "#3F6212"
+  },
+  {
+    "id": "jackfruit",
+    "index": 39,
+    "name": "Jackfruit",
+    "category": "Fruit",
+    "imagePath": "/images/jackfruit.svg",
+    "primaryColor": "#84CC16",
+    "secondaryColor": "#FACC15",
+    "accentColor": "#4D7C0F"
+  },
+  {
+    "id": "rambutan",
+    "index": 40,
+    "name": "Rambutan",
+    "category": "Fruit",
+    "imagePath": "/images/rambutan.svg",
+    "primaryColor": "#E11D48",
+    "secondaryColor": "#FDE047",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "mangosteen",
+    "index": 41,
+    "name": "Mangosteen",
+    "category": "Fruit",
+    "imagePath": "/images/mangosteen.svg",
+    "primaryColor": "#581C87",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "date",
+    "index": 42,
+    "name": "Date",
+    "category": "Fruit",
+    "imagePath": "/images/date.svg",
+    "primaryColor": "#78350F",
+    "secondaryColor": "#B45309",
+    "accentColor": "#451A03"
+  },
+  {
+    "id": "mulberry",
+    "index": 43,
+    "name": "Mulberry",
+    "category": "Fruit",
+    "imagePath": "/images/mulberry.svg",
+    "primaryColor": "#4C1D95",
+    "secondaryColor": "#A78BFA",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "gooseberry",
+    "index": 44,
+    "name": "Gooseberry",
+    "category": "Fruit",
+    "imagePath": "/images/gooseberry.svg",
+    "primaryColor": "#84CC16",
+    "secondaryColor": "#ECFCCB",
+    "accentColor": "#3F6212"
+  },
+  {
+    "id": "elderberry",
+    "index": 45,
+    "name": "Elderberry",
+    "category": "Fruit",
+    "imagePath": "/images/elderberry.svg",
+    "primaryColor": "#1E1B4B",
+    "secondaryColor": "#818CF8",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "boysenberry",
+    "index": 46,
+    "name": "Boysenberry",
+    "category": "Fruit",
+    "imagePath": "/images/boysenberry.svg",
+    "primaryColor": "#701A75",
+    "secondaryColor": "#E879F9",
+    "accentColor": "#16A34A"
+  },
+  {
+    "id": "kumquat",
+    "index": 47,
+    "name": "Kumquat",
+    "category": "Fruit",
+    "imagePath": "/images/kumquat.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "plantain",
+    "index": 48,
+    "name": "Plantain",
+    "category": "Fruit",
+    "imagePath": "/images/plantain.svg",
+    "primaryColor": "#84CC16",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#3F6212"
+  },
+  {
+    "id": "tamarind",
+    "index": 49,
+    "name": "Tamarind",
+    "category": "Fruit",
+    "imagePath": "/images/tamarind.svg",
+    "primaryColor": "#92400E",
+    "secondaryColor": "#D97706",
+    "accentColor": "#451A03"
+  },
+  {
+    "id": "quince",
+    "index": 50,
+    "name": "Quince",
+    "category": "Fruit",
+    "imagePath": "/images/quince.svg",
+    "primaryColor": "#EAB308",
+    "secondaryColor": "#FEF9C3",
+    "accentColor": "#15803D"
+  },
+  {
+    "id": "cat",
+    "index": 51,
+    "name": "Cat",
+    "category": "Animal",
+    "imagePath": "/images/cat.svg",
+    "primaryColor": "#F97316",
+    "secondaryColor": "#FFEDD5",
+    "accentColor": "#F43F5E"
+  },
+  {
+    "id": "wolf",
+    "index": 52,
+    "name": "Wolf",
+    "category": "Animal",
+    "imagePath": "/images/wolf.svg",
+    "primaryColor": "#64748B",
+    "secondaryColor": "#E2E8F0",
+    "accentColor": "#F59E0B"
+  },
+  {
+    "id": "eagle",
+    "index": 53,
+    "name": "Eagle",
+    "category": "Animal",
+    "imagePath": "/images/eagle.svg",
+    "primaryColor": "#78350F",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#FACC15"
+  },
+  {
+    "id": "lion",
+    "index": 54,
+    "name": "Lion",
+    "category": "Animal",
+    "imagePath": "/images/lion.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#B45309",
+    "accentColor": "#FEF3C7"
+  },
+  {
+    "id": "tiger",
+    "index": 55,
+    "name": "Tiger",
+    "category": "Animal",
+    "imagePath": "/images/tiger.svg",
+    "primaryColor": "#EA580C",
+    "secondaryColor": "#FFEDD5",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "dolphin",
+    "index": 56,
+    "name": "Dolphin",
+    "category": "Animal",
+    "imagePath": "/images/dolphin.svg",
+    "primaryColor": "#0EA5E9",
+    "secondaryColor": "#E0F2FE",
+    "accentColor": "#0284C7"
+  },
+  {
+    "id": "panda",
+    "index": 57,
+    "name": "Panda",
+    "category": "Animal",
+    "imagePath": "/images/panda.svg",
+    "primaryColor": "#F8FAFC",
+    "secondaryColor": "#1E293B",
+    "accentColor": "#22C55E"
+  },
+  {
+    "id": "elephant",
+    "index": 58,
+    "name": "Elephant",
+    "category": "Animal",
+    "imagePath": "/images/elephant.svg",
+    "primaryColor": "#94A3B8",
+    "secondaryColor": "#CBD5E1",
+    "accentColor": "#FDA4AF"
+  },
+  {
+    "id": "penguin",
+    "index": 59,
+    "name": "Penguin",
+    "category": "Animal",
+    "imagePath": "/images/penguin.svg",
+    "primaryColor": "#1E293B",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#F97316"
+  },
+  {
+    "id": "giraffe",
+    "index": 60,
+    "name": "Giraffe",
+    "category": "Animal",
+    "imagePath": "/images/giraffe.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#92400E",
+    "accentColor": "#FEF08A"
+  },
+  {
+    "id": "dog",
+    "index": 61,
+    "name": "Dog",
+    "category": "Animal",
+    "imagePath": "/images/dog.svg",
+    "primaryColor": "#D97706",
+    "secondaryColor": "#FEF3C7",
+    "accentColor": "#78350F"
+  },
+  {
+    "id": "rabbit",
+    "index": 62,
+    "name": "Rabbit",
+    "category": "Animal",
+    "imagePath": "/images/rabbit.svg",
+    "primaryColor": "#F8FAFC",
+    "secondaryColor": "#FDA4AF",
+    "accentColor": "#F43F5E"
+  },
+  {
+    "id": "fox",
+    "index": 63,
+    "name": "Fox",
+    "category": "Animal",
+    "imagePath": "/images/fox.svg",
+    "primaryColor": "#EA580C",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "horse",
+    "index": 64,
+    "name": "Horse",
+    "category": "Animal",
+    "imagePath": "/images/horse.svg",
+    "primaryColor": "#92400E",
+    "secondaryColor": "#451A03",
+    "accentColor": "#FDE68A"
+  },
+  {
+    "id": "monkey",
+    "index": 65,
+    "name": "Monkey",
+    "category": "Animal",
+    "imagePath": "/images/monkey.svg",
+    "primaryColor": "#92400E",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#78350F"
+  },
+  {
+    "id": "kangaroo",
+    "index": 66,
+    "name": "Kangaroo",
+    "category": "Animal",
+    "imagePath": "/images/kangaroo.svg",
+    "primaryColor": "#D97706",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#92400E"
+  },
+  {
+    "id": "bear",
+    "index": 67,
+    "name": "Bear",
+    "category": "Animal",
+    "imagePath": "/images/bear.svg",
+    "primaryColor": "#78350F",
+    "secondaryColor": "#D97706",
+    "accentColor": "#451A03"
+  },
+  {
+    "id": "cheetah",
+    "index": 68,
+    "name": "Cheetah",
+    "category": "Animal",
+    "imagePath": "/images/cheetah.svg",
+    "primaryColor": "#FBBF24",
+    "secondaryColor": "#FEF3C7",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "owl",
+    "index": 69,
+    "name": "Owl",
+    "category": "Animal",
+    "imagePath": "/images/owl.svg",
+    "primaryColor": "#854D0E",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#F97316"
+  },
+  {
+    "id": "whale",
+    "index": 70,
+    "name": "Whale",
+    "category": "Animal",
+    "imagePath": "/images/whale.svg",
+    "primaryColor": "#2563EB",
+    "secondaryColor": "#DBEAFE",
+    "accentColor": "#1D4ED8"
+  },
+  {
+    "id": "gorilla",
+    "index": 71,
+    "name": "Gorilla",
+    "category": "Animal",
+    "imagePath": "/images/gorilla.svg",
+    "primaryColor": "#334155",
+    "secondaryColor": "#64748B",
+    "accentColor": "#0F172A"
+  },
+  {
+    "id": "koala",
+    "index": 72,
+    "name": "Koala",
+    "category": "Animal",
+    "imagePath": "/images/koala.svg",
+    "primaryColor": "#64748B",
+    "secondaryColor": "#E2E8F0",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "sloth",
+    "index": 73,
+    "name": "Sloth",
+    "category": "Animal",
+    "imagePath": "/images/sloth.svg",
+    "primaryColor": "#A16207",
+    "secondaryColor": "#FEF3C7",
+    "accentColor": "#451A03"
+  },
+  {
+    "id": "crocodile",
+    "index": 74,
+    "name": "Crocodile",
+    "category": "Animal",
+    "imagePath": "/images/crocodile.svg",
+    "primaryColor": "#15803D",
+    "secondaryColor": "#86EFAC",
+    "accentColor": "#FACC15"
+  },
+  {
+    "id": "jaguar",
+    "index": 75,
+    "name": "Jaguar",
+    "category": "Animal",
+    "imagePath": "/images/jaguar.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "falcon",
+    "index": 76,
+    "name": "Falcon",
+    "category": "Animal",
+    "imagePath": "/images/falcon.svg",
+    "primaryColor": "#475569",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#EAB308"
+  },
+  {
+    "id": "zebra",
+    "index": 77,
+    "name": "Zebra",
+    "category": "Animal",
+    "imagePath": "/images/zebra.svg",
+    "primaryColor": "#F8FAFC",
+    "secondaryColor": "#0F172A",
+    "accentColor": "#64748B"
+  },
+  {
+    "id": "flamingo",
+    "index": 78,
+    "name": "Flamingo",
+    "category": "Animal",
+    "imagePath": "/images/flamingo.svg",
+    "primaryColor": "#F43F5E",
+    "secondaryColor": "#FDA4AF",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "otter",
+    "index": 79,
+    "name": "Otter",
+    "category": "Animal",
+    "imagePath": "/images/otter.svg",
+    "primaryColor": "#92400E",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#451A03"
+  },
+  {
+    "id": "peacock",
+    "index": 80,
+    "name": "Peacock",
+    "category": "Animal",
+    "imagePath": "/images/peacock.svg",
+    "primaryColor": "#0284C7",
+    "secondaryColor": "#10B981",
+    "accentColor": "#FACC15"
+  },
+  {
+    "id": "pizza",
+    "index": 81,
+    "name": "Pizza",
+    "category": "Object",
+    "imagePath": "/images/pizza.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#EF4444",
+    "accentColor": "#D97706"
+  },
+  {
+    "id": "flower",
+    "index": 82,
+    "name": "Flower",
+    "category": "Nature",
+    "imagePath": "/images/flower.svg",
+    "primaryColor": "#EC4899",
+    "secondaryColor": "#FACC15",
+    "accentColor": "#F472B6"
+  },
+  {
+    "id": "guitar",
+    "index": 83,
+    "name": "Guitar",
+    "category": "Object",
+    "imagePath": "/images/guitar.svg",
+    "primaryColor": "#D97706",
+    "secondaryColor": "#78350F",
+    "accentColor": "#FDE68A"
+  },
+  {
+    "id": "piano",
+    "index": 84,
+    "name": "Piano",
+    "category": "Object",
+    "imagePath": "/images/piano.svg",
+    "primaryColor": "#1E293B",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#EF4444"
+  },
+  {
+    "id": "waterfall",
+    "index": 85,
+    "name": "Waterfall",
+    "category": "Nature",
+    "imagePath": "/images/waterfall.svg",
+    "primaryColor": "#0EA5E9",
+    "secondaryColor": "#E0F2FE",
+    "accentColor": "#10B981"
+  },
+  {
+    "id": "mountain",
+    "index": 86,
+    "name": "Mountain",
+    "category": "Nature",
+    "imagePath": "/images/mountain.svg",
+    "primaryColor": "#64748B",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#10B981"
+  },
+  {
+    "id": "moon",
+    "index": 87,
+    "name": "Moon",
+    "category": "Nature",
+    "imagePath": "/images/moon.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#FEF08A",
+    "accentColor": "#CA8A04"
+  },
+  {
+    "id": "sun",
+    "index": 88,
+    "name": "Sun",
+    "category": "Nature",
+    "imagePath": "/images/sun.svg",
+    "primaryColor": "#F59E0B",
+    "secondaryColor": "#FDE047",
+    "accentColor": "#EA580C"
+  },
+  {
+    "id": "star",
+    "index": 89,
+    "name": "Star",
+    "category": "Nature",
+    "imagePath": "/images/star.svg",
+    "primaryColor": "#FACC15",
+    "secondaryColor": "#FEF9C3",
+    "accentColor": "#EAB308"
+  },
+  {
+    "id": "cloud",
+    "index": 90,
+    "name": "Cloud",
+    "category": "Nature",
+    "imagePath": "/images/cloud.svg",
+    "primaryColor": "#38BDF8",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#BAE6FD"
+  },
+  {
+    "id": "lake",
+    "index": 91,
+    "name": "Lake",
+    "category": "Nature",
+    "imagePath": "/images/lake.svg",
+    "primaryColor": "#0284C7",
+    "secondaryColor": "#7DD3FC",
+    "accentColor": "#22C55E"
+  },
+  {
+    "id": "sea",
+    "index": 92,
+    "name": "Sea",
+    "category": "Nature",
+    "imagePath": "/images/sea.svg",
+    "primaryColor": "#0369A1",
+    "secondaryColor": "#38BDF8",
+    "accentColor": "#E0F2FE"
+  },
+  {
+    "id": "plate",
+    "index": 93,
+    "name": "Plate",
+    "category": "Object",
+    "imagePath": "/images/plate.svg",
+    "primaryColor": "#E2E8F0",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#3B82F6"
+  },
+  {
+    "id": "sunglasses",
+    "index": 94,
+    "name": "Sunglasses",
+    "category": "Object",
+    "imagePath": "/images/sunglasses.svg",
+    "primaryColor": "#1E293B",
+    "secondaryColor": "#0EA5E9",
+    "accentColor": "#F43F5E"
+  },
+  {
+    "id": "ice-cream",
+    "index": 95,
+    "name": "Ice-cream",
+    "category": "Object",
+    "imagePath": "/images/ice-cream.svg",
+    "primaryColor": "#F472B6",
+    "secondaryColor": "#FDE68A",
+    "accentColor": "#D97706"
+  },
+  {
+    "id": "spoon",
+    "index": 96,
+    "name": "Spoon",
+    "category": "Object",
+    "imagePath": "/images/spoon.svg",
+    "primaryColor": "#94A3B8",
+    "secondaryColor": "#F8FAFC",
+    "accentColor": "#475569"
+  },
+  {
+    "id": "cycle",
+    "index": 97,
+    "name": "Cycle",
+    "category": "Object",
+    "imagePath": "/images/cycle.svg",
+    "primaryColor": "#EF4444",
+    "secondaryColor": "#1E293B",
+    "accentColor": "#38BDF8"
+  },
+  {
+    "id": "car",
+    "index": 98,
+    "name": "Car",
+    "category": "Object",
+    "imagePath": "/images/car.svg",
+    "primaryColor": "#EF4444",
+    "secondaryColor": "#38BDF8",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "pen",
+    "index": 99,
+    "name": "Pen",
+    "category": "Object",
+    "imagePath": "/images/pen.svg",
+    "primaryColor": "#2563EB",
+    "secondaryColor": "#FACC15",
+    "accentColor": "#1E293B"
+  },
+  {
+    "id": "bottle",
+    "index": 100,
+    "name": "Bottle",
+    "category": "Object",
+    "imagePath": "/images/bottle.svg",
+    "primaryColor": "#06B6D4",
+    "secondaryColor": "#CFFAFE",
+    "accentColor": "#0284C7"
+  }
+]

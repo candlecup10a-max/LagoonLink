@@ -1,0 +1,6 @@
+{
+  "name": "LagoonLink: 10s Dataset Match Puzzle",
+  "description": "Android-style matching puzzle game built with 100 scraped dataset item sprites, 10-second target linking steps over scenic lagoon stages, progressive difficulty levels, and Firebase high-score leaderboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

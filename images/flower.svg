@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.88" />
+    </radialGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#bgGlow)" stroke="#FFFFFF" stroke-width="4" filter="url(#dropShadow)" />
+  <g filter="url(#dropShadow)">
+    
+        <circle cx="60" cy="34" r="14" fill="#EC4899" />
+        <circle cx="84" cy="52" r="14" fill="#F472B6" />
+        <circle cx="74" cy="80" r="14" fill="#EC4899" />
+        <circle cx="46" cy="80" r="14" fill="#F472B6" />
+        <circle cx="36" cy="52" r="14" fill="#EC4899" />
+        <circle cx="60" cy="58" r="14" fill="#FACC15" />
+      
+  </g>
+</svg>

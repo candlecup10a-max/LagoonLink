@@ -1,0 +1,199 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Pillar 1: Global Default-Deny Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Hardened Global Primitives
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    // Pillar 2: Validation Blueprint for ScoreRecord
+    function isValidScoreRecord(data) {
+      return data.keys().hasAll([
+          'userId',
+          'playerName',
+          'score',
+          'levelReached',
+          'matchesCount',
+          'status',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'userId',
+          'playerName',
+          'score',
+          'levelReached',
+          'matchesCount',
+          'status',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.userId is string
+        && data.userId.size() >= 1
+        && data.userId.size() <= 128
+        && data.userId.matches('^[a-zA-Z0-9_\\-]+$')
+        && data.userId == request.auth.uid
+        && data.playerName is string
+        && data.playerName.size() >= 1
+        && data.playerName.size() <= 40
+        && data.score is int
+        && data.score >= 0
+        && data.score <= 10000000
+        && data.levelReached is int
+        && data.levelReached >= 1
+        && data.levelReached <= 1000
+        && data.matchesCount is int
+        && data.matchesCount >= 0
+        && data.matchesCount <= 100000
+        && data.status is string
+        && data.status.size() >= 6
+        && data.status.size() <= 16
+        && (data.status == 'active' || data.status == 'completed')
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && data.updatedAt == request.time;
+    }
+
+    // Pillar 2 & 5: Validation Blueprint for GlobalLeaderboard with Total Array Guarding
+    function isValidGlobalLeaderboard(data) {
+      return data.keys().hasAll([
+          'boardType',
+          'lastUpdatedBy',
+          'topScore',
+          'entries',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'boardType',
+          'lastUpdatedBy',
+          'topScore',
+          'entries',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.boardType is string
+        && data.boardType.size() == 6
+        && data.boardType == 'global'
+        && data.lastUpdatedBy is string
+        && data.lastUpdatedBy.size() >= 1
+        && data.lastUpdatedBy.size() <= 128
+        && data.lastUpdatedBy.matches('^[a-zA-Z0-9_\\-]+$')
+        && data.lastUpdatedBy == request.auth.uid
+        && data.topScore is int
+        && data.topScore >= 0
+        && data.topScore <= 10000000
+        && data.entries is list
+        && data.entries.size() >= 1
+        && data.entries.size() <= 10
+        && data.entries[0] is map
+        && data.entries[0].keys().hasAll(['userId', 'playerName', 'score', 'levelReached', 'matchesCount'])
+        && data.entries[0].keys().hasOnly(['userId', 'playerName', 'score', 'levelReached', 'matchesCount'])
+        && data.entries[0].userId is string
+        && data.entries[0].userId.size() >= 1
+        && data.entries[0].userId.size() <= 128
+        && data.entries[0].playerName is string
+        && data.entries[0].playerName.size() >= 1
+        && data.entries[0].playerName.size() <= 40
+        && data.entries[0].score is int
+        && data.entries[0].score >= 0
+        && data.entries[0].score <= 10000000
+        && data.entries[0].levelReached is int
+        && data.entries[0].levelReached >= 1
+        && data.entries[0].levelReached <= 1000
+        && data.entries[0].matchesCount is int
+        && data.entries[0].matchesCount >= 0
+        && data.entries[0].matchesCount <= 100000
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && data.updatedAt == request.time;
+    }
+
+    // Collection 1: Individual Player Score Records
+    match /scores/{scoreId} {
+      allow get: if isSignedIn()
+        && isValidId(scoreId)
+        && (resource == null || existing().userId == request.auth.uid);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+
+      allow create: if isVerifiedUser()
+        && isValidId(scoreId)
+        && isValidScoreRecord(incoming())
+        && incoming().createdAt == request.time;
+
+      allow update: if isVerifiedUser()
+        && isValidId(scoreId)
+        && isValidScoreRecord(incoming())
+        && existing().userId == request.auth.uid
+        && incoming().userId == existing().userId
+        && incoming().createdAt == existing().createdAt
+        && existing().status != 'completed'
+        && (
+          // Action 1: Progress Score Run
+          (incoming().status == 'active'
+            && incoming().score >= existing().score
+            && incoming().diff(existing()).affectedKeys().hasOnly(['score', 'levelReached', 'matchesCount', 'updatedAt']))
+          ||
+          // Action 2: Finalize Score Run
+          (incoming().status == 'completed'
+            && incoming().score >= existing().score
+            && incoming().diff(existing()).affectedKeys().hasOnly(['score', 'levelReached', 'matchesCount', 'status', 'updatedAt']))
+        );
+
+      allow delete: if isVerifiedUser()
+        && isValidId(scoreId)
+        && existing().userId == request.auth.uid;
+    }
+
+    // Collection 2: Global Top-10 Leaderboard Summary
+    match /leaderboards/{boardId} {
+      allow get: if isSignedIn()
+        && isValidId(boardId)
+        && boardId == 'global'
+        && (resource == null || existing().boardType == 'global');
+      allow list: if false;
+
+      allow create: if isVerifiedUser()
+        && isValidId(boardId)
+        && boardId == 'global'
+        && isValidGlobalLeaderboard(incoming())
+        && incoming().createdAt == request.time;
+
+      allow update: if isVerifiedUser()
+        && isValidId(boardId)
+        && boardId == 'global'
+        && isValidGlobalLeaderboard(incoming())
+        && incoming().boardType == existing().boardType
+        && incoming().createdAt == existing().createdAt
+        && incoming().topScore >= existing().topScore
+        && (
+          // Action: Post New High Score to Global Board
+          incoming().diff(existing()).affectedKeys().hasOnly(['lastUpdatedBy', 'topScore', 'entries', 'updatedAt'])
+        );
+
+      allow delete: if false;
+    }
+  }
+}
